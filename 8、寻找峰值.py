@@ -7,7 +7,7 @@
 4.你可以使用O(logN)的时间复杂度实现此问题吗？
 
 数据范围：
-1 \le nums.length \le 2\times 10^5 \1≤nums.length≤2×10
+  
 5
 
 -2^{31}<= nums[i] <= 2^{31} - 1−2
