@@ -1,3 +1,9 @@
+"""
+leetcode 206
+题意：反转一个单链表。
+
+示例: 输入: 1->2->3->4->5->NULL 输出: 5->4->3->2->1->NULL
+"""
 class ListNode:
     def __init__(self, x) -> None:
         self.val = x
