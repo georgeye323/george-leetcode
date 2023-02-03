@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4917b942-b15c-4b38-9729-0a593627b933" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/牛客网/1、反转链表.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/牛客网/2、链表内指定区间反转.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,11 +66,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/牛客网/1、反转链表.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-241">
-              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="199">
+              <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/牛客网/2、链表内指定区间反转.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -111,6 +119,7 @@
         <option value="$PROJECT_DIR$/二叉树/二叉树的递归遍历.go" />
         <option value="$PROJECT_DIR$/二叉树/二叉树的迭代遍历.go" />
         <option value="$PROJECT_DIR$/牛客网/1、反转链表.py" />
+        <option value="$PROJECT_DIR$/牛客网/2、链表内指定区间反转.py" />
       </list>
     </option>
   </component>
@@ -140,6 +149,11 @@
             <path>
               <item name="george-leetcode" type="b2602c69:ProjectViewProjectNode" />
               <item name="george-leetcode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="george-leetcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="george-leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="牛客网" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -497,8 +511,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/牛客网/1、反转链表.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-241">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="199">
+          <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/牛客网/2、链表内指定区间反转.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
         </state>
       </provider>
     </entry>
