@@ -41,17 +41,28 @@ def quick_sort(lst: list)->list:
         额外空间开销出在暂存基准值，O(logn)次划分需要O(logn)个，空间复杂度O(logn)
     """
 
-    def partition(lst, left, right):
-        """进行分区操作"""
-        key = left
-        while left < right:
-            while left < right and lst[right] >= lst[key]:
-                right -= 1
-            while left < right and lst[left] <= lst[key]:
-                left += 1
-            lst[left], lst[right] = lst[right], lst[left]
-        lst[left], lst[key] = lst[key], lst[left]
-        return  left
+    def partition(nums: list, low: int, high: int) -> int:
+        # 选取基准元素
+        pivot = nums[low]
+        i = low
+        j = high
+        while i < j:
+            # j是从右向左走，如果值大于pivot则位置保持不变，j左移
+            while i < j and nums[j] >= pivot:
+                # 此时的值大于基准元素
+                j -= 1
+            # 不满足上述条件时，nums[j] < pivot，应该放在左边，所以将i位置赋值为j
+            nums[i] = nums[j]
+            # I是从左向右走，如果值小于pivot则位置保持不变，i右移
+            while i < j and nums[i] < pivot:
+                i += 1
+
+            # 不满足上述条件时,nums[i]>=pivot,应该放在右边，所以将h位置赋值为i
+            nums[j] = nums[i]
+
+        # 将pivot的值放到正确的索引位置
+        nums[i] = pivot
+        return i
 
     def quicksort(lst, left, right):
         if left >= right:
@@ -169,8 +180,9 @@ if __name__ == "__main__":
     li =[_ for _ in range(10000)]
     random.shuffle(li)
     start_time = time.time()
+    print(li)
     print(f"start_time is {start_time}")
-    shell_sort(li)
+    quick_sort(li)
     end_time = time.time()
     print(f"花费时间为 {end_time - start_time}")
 
