@@ -7,6 +7,7 @@ leetcode 209
 输入：s = 7, nums = [2,3,1,2,4,3] 输出：2 解释：子数组 [4,3] 是该条件下的长度最小的子数组。
 """
 
+
 def solution(target: int, nums: list)->list:
     left = 0
     n = len(nums)
@@ -19,6 +20,7 @@ def solution(target: int, nums: list)->list:
             num_sum -= nums[left]
             left += 1
     return 0 if res == float("inf") else res
+
 
 print(solution(7,  [2,3,1,2,4,3]))
 

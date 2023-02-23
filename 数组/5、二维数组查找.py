@@ -12,10 +12,11 @@
 给定 target = 3，返回 false。
 """
 
+
 def solution(target: int, array: list)-> bool:
     # 判断特殊情况
     if len(array) == 0:
-        return  False
+        return False
     if len(array[0]) == 0:
         return False
     n = len(array)

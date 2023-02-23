@@ -7,6 +7,7 @@
 示例 2： 输入：nums = [-7,-3,2,3,11] 输出：[4,9,9,49,121]
 """
 
+
 def solution(nums: list)->list:
     result = [-1] * len(nums)
     left = 0
@@ -21,5 +22,6 @@ def solution(nums: list)->list:
             right -= 1
         k -= 1
     return result
+
 
 print(solution([-4,-1,0,3,10]))

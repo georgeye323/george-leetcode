@@ -7,6 +7,7 @@ leetcode 59
 输入: 3 输出: [ [ 1, 2, 3 ], [ 8, 9, 4 ], [ 7, 6, 5 ] ]
 """
 
+
 def solution(n: int)->list:
     # 1、生成矩阵
     result =[[0] * n for _ in range(n)]
@@ -23,7 +24,7 @@ def solution(n: int)->list:
         # 从上到下
         for i in range(start_x, n-offset):
             result[i][n-offset] = count
-            count +=1
+            count += 1
         # 从右到左
         for i in range(n-offset, start_y, -1):
             result[n-offset][i] = count
@@ -38,5 +39,6 @@ def solution(n: int)->list:
     if n % 2 != 0:
         result[n//2][n//2] = count
     return result
+
 
 print(solution(n=2))

@@ -10,6 +10,7 @@
 示例 2: 给定 nums = [0,1,2,2,3,0,4,2], val = 2, 函数应该返回新的长度 5, 并且 nums 中的前五个元素为 0, 1, 3, 0, 4。
 """
 
+
 def solution(nums: list, val: int)->int:
     # 双指针解法
     left = 0
@@ -22,5 +23,6 @@ def solution(nums: list, val: int)->int:
             nums[left],nums[right] = nums[right], nums[left]
             right -= 1
     return left
+
 
 print(solution([0,1,2,2,3,0,4,2], 2))

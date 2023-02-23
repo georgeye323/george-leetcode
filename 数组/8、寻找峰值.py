@@ -20,6 +20,7 @@
 说明：4和8都是峰值元素，返回4的索引1或者8的索引5都可以
 """
 
+
 def solution(nums: list)->int:
     left = 0
     right = 1
@@ -30,5 +31,6 @@ def solution(nums: list)->int:
         else:
             left = mid + 1
     return right
+
 
 print(solution([3,6]))
